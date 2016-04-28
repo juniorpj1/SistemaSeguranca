@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta-charset="utf-8">
+	<title>Segurança - Autenticação de Usuário</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<form method="POST" action="/Seguranca/j_security_check">
+
+  <div class="form-group">
+    <label for="inputUsuario">Usuário</label>
+    <input type="email" class="form-control" id="inputUsuario" placeholder="Digite o usuário">
+  </div>
+  
+  <div class="form-group">
+    <label for="inputSenha">Password</label>
+    <input type="password" class="form-control" id="inputSenha" placeholder="Password">
+  </div>
+  
+  <button type="submit" class="btn btn-default">Entrar</button>
+  
+</form>
+
+</body>
+</html>
