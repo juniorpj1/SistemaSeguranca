@@ -1,3 +1,4 @@
+
 package seguranca.model.domain;
 
 import java.io.Serializable;
@@ -9,6 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlTransient;
 
 @Entity
 @Table(name="TB_SISTEMA")
@@ -37,6 +39,7 @@ public class Sistema implements Serializable{
 		super();
 	}
 
+	@XmlTransient
 	public Integer getCodigo() {
 		return codigo;
 	}
@@ -60,7 +63,7 @@ public class Sistema implements Serializable{
 	public void setUrl(String url) {
 		this.url = url;
 	}
-
+	@XmlTransient
 	public List<Role> getRoles() {
 		return roles;
 	}

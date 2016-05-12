@@ -23,6 +23,7 @@
 			<role-name>*</role-name>
 		</auth-constraint>
 	</security-constraint>
+	
 	<security-constraint>
 		<display-name>Menu</display-name>
 		<web-resource-collection>
@@ -35,8 +36,8 @@
 	</security-constraint>
 	<security-constraint>
 		<web-resource-collection>
-		    <web-resource-name>cliente</web-resource-name>
-			<url-pattern>/cliente.html</url-pattern>
+		    <web-resource-name>pedido</web-resource-name>
+			<url-pattern>/pedido.html</url-pattern>
 		</web-resource-collection>
 		<auth-constraint>
 			<role-name>SEG_admin</role-name>
